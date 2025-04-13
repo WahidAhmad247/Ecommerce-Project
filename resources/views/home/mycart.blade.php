@@ -84,7 +84,8 @@
 
                 <div class="order_gap">
                     
-                <input type="submit" value="Place  Order" class="btn btn-primary">
+                <input type="submit" value="Cash on delivery" class="btn btn-primary">
+                <a class="btn btn-success" href="">Pay Using Card</a>
                 </div>
             </form>
         </div>

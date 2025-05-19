@@ -12,8 +12,6 @@
     <!-- end header section -->
     <!-- slider section -->
 
-   @include('home.slider')
-
     <!-- end slider section -->
   </div>
   <!-- end hero area -->
@@ -26,10 +24,6 @@
 
 
    
-
-  <!-- info section -->
-
-@include('home.footer')
 
 </body>
 

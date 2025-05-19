@@ -34,11 +34,14 @@
 <body>
     @include('admin.header')
 
+    
     @include('admin.sidebar')
     <!-- Sidebar Navigation end-->
     <div class="page-content">
         <div class="page-header">
             <div class="container-fluid">
+                <h3>All Orders</h3>
+                <br><br>
 
         <table class="table">
             <tr>
@@ -48,6 +51,7 @@
                 <th>Product Tile</th>
                 <th>Price</th>
                 <th>Image</th>
+                <th>Payment Status</th>
                 <th>Status</th>
                 <th>Change Status</th>
                 <th>Print PDF</th>
@@ -60,6 +64,7 @@
                 <td>{{$product->product->title}}</td>
                 <td>{{$product->product->price}}</td>
                 <td><img width="150" height="100" src="products/{{$product->product->image}}" alt=""></td>
+                <td>{{$product->payment_status}}</td>
                 <td>
                     @if($product->status == 'in progress')
                 <span style="color: red;" > {{$product->status}}</span>
